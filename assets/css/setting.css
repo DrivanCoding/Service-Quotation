@@ -1,0 +1,13 @@
+.domaineSetting div{
+    margin:20px;
+}
+.domaineSetting label{
+    margin:20px;
+}
+#save{
+    background: blue;
+    color:white;
+    width:20vh;
+    height:6vh;
+    border:none;    
+}
