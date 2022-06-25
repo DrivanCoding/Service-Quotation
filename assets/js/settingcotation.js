@@ -3,12 +3,14 @@ setInterval(function(){
     input=document.querySelectorAll(".input");
     btn=document.querySelector("#save")
     for (let i = 0; i < input.length; i++) {
-        if(input[i].value<0){
+        if((input[i]='') || input[i].value<0){
             input[i].style.border="solid red 2px"
             save.type="button" 
             break;
-        }else{
+        }
+        else{
             input[i].style.border="solid 1px green"
+            save.type="submit"          
         }
         
     }

@@ -1,3 +1,4 @@
+prix_cotations=document.querySelector("#prix_quotation").innerHTML
 capacite=document.querySelector("#capaciter")
 ram=document.querySelector("#ram")
 nbrCpu=document.querySelector("#nbrVcpu")
@@ -6,6 +7,12 @@ nbremail=document.querySelector("#nbremail")
 nbrbd=document.querySelector("#nbrBd")
 securite=document.querySelector("#securiter")
 var modeH=document.querySelector("#ModeHeber")   
+var domaine=document.querySelector("#nomDomain")   
+ let devis=""
+ let prix_cotation=prix_cotations.split("|")
+ let prix_cotation_mode=prix_cotation[1].split(",")
+ let prix_cotation_domaine=prix_cotation[0].split(",")
+ let affiche_devis=document.querySelector("#devis")
 setInterval(()=>{
  
 switch (modeH.selectedIndex) {
@@ -16,7 +23,8 @@ case 0:
      nbrsite.innerHTML="2"
      nbremail.innerHTML="10"
      nbrbd.innerHTML="1"
-     securite.innerHTML="License SSL "            
+     securite.innerHTML="License SSL "
+     devis=prix_cotation_mode[0]            
     break;
     case 1:
      capacite.innerHTML="250 GB" 
@@ -25,7 +33,8 @@ case 0:
      nbrsite.innerHTML="20"
      nbremail.innerHTML="25"
      nbrbd.innerHTML="5"
-     securite.innerHTML="License SSL"            
+     securite.innerHTML="License SSL" 
+     devis=prix_cotation_mode[1]           
     break;
     case 2:
      capacite.innerHTML="Illimiter"
@@ -34,7 +43,8 @@ case 0:
      nbrsite.innerHTML="Illimiter"
      nbremail.innerHTML="200"
      nbrbd.innerHTML="Illimiter"
-     securite.innerHTML="License SSL"            
+     securite.innerHTML="License SSL" 
+     devis=prix_cotation_mode[2]           
     break;
     case 3:
      capacite.innerHTML="Illimiter"
@@ -43,7 +53,28 @@ case 0:
      nbrsite.innerHTML="Illimiter"
      nbremail.innerHTML="Illimiter"
      nbrbd.innerHTML="Illimiter"
-     securite.innerHTML="License SSL"            
+     securite.innerHTML="License SSL" 
+     devis=prix_cotation_mode[3]           
     break;
-}   
+} 
+
+switch (modeH.selectedIndex) {
+    case 0:
+        devis=parseInt(devis)+parseInt(prix_cotation_domaine[0])
+        break;
+    case 1:
+        devis=parseInt(devis)+parseInt(prix_cotation_domaine[1])
+        
+        break;
+    case 2:
+        devis=parseInt(devis)+parseInt(prix_cotation_domaine[2])
+           
+        break;
+    case 3:
+        devis=parseInt(devis)+parseInt(prix_cotation_domaine[3])
+                
+        break;
+
+} 
+affiche_devis.innerHTML="Devis Estimative [0,5-"+devis+"]($)"       
 },100)

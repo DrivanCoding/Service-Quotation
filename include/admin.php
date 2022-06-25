@@ -8,6 +8,7 @@ if(isset($_POST['enregistre']) ){
     update_option( 'nomDomaine1',$_POST['nomDomaine1']);
     update_option( 'nomDomaine2',$_POST['nomDomaine2']);
     update_option( 'nomDomaine3',$_POST['nomDomaine3']);
+    update_option( 'nomDomaine4',$_POST['nomDomaine4']);
     update_option( 'modeHebergement1',$_POST['modeHebergement1']);
     update_option( 'modeHebergement2',$_POST['modeHebergement2']);
     update_option( 'modeHebergement3',$_POST['modeHebergement3']);
@@ -30,11 +31,13 @@ if(isset($_POST['enregistre']) ){
 </select><br>
 <span>Nom de Domaine</span><br><br>
             <label for="100">.com</label>
-            <input type="number" id="nomDomaine"  placeholder="montant($)" class="input" name="nomDomaine1"><br><br>
+            <input type="number" id="nomDomaine" value="<?php echo get_option( 'nomDomaine1'); ?>" placeholder="montant($)" class="input" name="nomDomaine1"><br><br>
             <label for="100">.fr</label>
-            <input type="number" id="nomDomaine"  placeholder="montant($)" class="input" name="nomDomaine2"><br><br>
+            <input type="number" id="nomDomaine"  value="<?php echo get_option( 'nomDomaine2'); ?>"   placeholder="montant($)" class="input" name="nomDomaine2"><br><br>
             <label for="100">.io</label>
-            <input type="number" id="nomDomaine"  placeholder="montant($)" class="input" name="nomDomaine3"><br><br>
+            <input type="number" id="nomDomaine"  value="<?php echo get_option( 'nomDomaine3'); ?>"   placeholder="montant($)" class="input" name="nomDomaine3"><br><br>
+            <label for="100">.org</label>
+            <input type="number" id="nomDomaine"  value="<?php echo get_option( 'nomDomaine4'); ?>"   placeholder="montant($)" class="input" name="nomDomaine4"><br><br>
            
 </div>
 
@@ -49,13 +52,13 @@ if(isset($_POST['enregistre']) ){
     <div>
             <span>Capciter de stockage</span><br><br>
             <label for="100">Personnel</label>
-            <input type="number" id="modeHebergement"  placeholder="montant($)" class="input" name="modeHebergement1"><br><br>
+            <input type="number" id="modeHebergement"  value="<?php echo get_option( 'modeHebergement1'); ?>"   placeholder="montant($)" class="input" name="modeHebergement1"><br><br>
             <label for="100">Standard</label>
-            <input type="number" id="modeHebergement"  placeholder="montant($)" class="input" name="modeHebergement2"><br><br>
+            <input type="number" id="modeHebergement"  value="<?php echo get_option( 'modeHebergement2'); ?>"   placeholder="montant($)" class="input" name="modeHebergement2"><br><br>
             <label for="100">Premium</label>
-            <input type="number" id="modeHebergement"  placeholder="montant($)" class="input" name="modeHebergement3"><br><br>
+            <input type="number" id="modeHebergement"  value="<?php echo get_option( 'modeHebergement3'); ?>"   placeholder="montant($)" class="input" name="modeHebergement3"><br><br>
             <label for="100">Expert</label>
-            <input type="number" id="modeHebergement"  placeholder="montant($)" class="input" name="modeHebergement4"><br><br>
+            <input type="number" id="modeHebergement"  value="<?php echo get_option( 'modeHebergement4'); ?>"   placeholder="montant($)" class="input" name="modeHebergement4"><br><br>
             
         </div>
 
