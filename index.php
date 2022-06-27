@@ -7,6 +7,12 @@ Author:Gajelabs
 Author URL:http://wordpress.com
 */
 
+function load_quotation(){
+    include_once "include/create_quotation_table.php";
+}
+
+register_activation_hook(__FILE__,'load_quotation' );
+
 
 function quotation_page(){
     add_menu_page('Quotation','Quotation','administrator','quotation','quotation_function','dashicons-media-text',40);
@@ -14,6 +20,7 @@ function quotation_page(){
     
     include_once "include/content_page.php";
     include_once "include/create_page.php";
+    
    
 }
 add_action('admin_menu','quotation_page');
