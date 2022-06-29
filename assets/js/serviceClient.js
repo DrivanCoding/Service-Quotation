@@ -1,3 +1,5 @@
+block_cotation=document.querySelector(".cotation")
+block_congratulation=document.querySelector(".congratulation_all")
 prix_cotations=document.querySelector("#prix_quotation").innerHTML
 capacite=document.querySelector("#capaciter")
 ram=document.querySelector("#ram")
@@ -14,7 +16,10 @@ var domaine=document.querySelector("#nomDomain")
  let prix_cotation_domaine=prix_cotation[0].split(",")
  let affiche_devis=document.querySelector("#devis")
 setInterval(()=>{
- 
+ request.addEventListener("click",()=>{
+    block_cotation.style.display="none"
+    block_congratulation.style.display="flex"
+ })
 switch (modeH.selectedIndex) {
 case 0:
      capacite.innerHTML="100 GB"
@@ -58,7 +63,7 @@ case 0:
     break;
 } 
 
-switch (modeH.selectedIndex) {
+switch (domaine.selectedIndex) {
     case 0:
         devis=parseInt(devis)+parseInt(prix_cotation_domaine[0])
         break;
@@ -76,5 +81,5 @@ switch (modeH.selectedIndex) {
         break;
 
 } 
-affiche_devis.innerHTML="Devis Estimative [0,5-"+devis+"]($)"       
-},100)
+affiche_devis.innerHTML="Devis Estimative [0,5-"+devis+"]($) "       
+},1000)

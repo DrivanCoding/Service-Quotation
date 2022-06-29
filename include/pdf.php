@@ -1,37 +1,88 @@
+
 <?php
+
 require("fpdf/fpdf.php");
-class PDF extends FPDF {
 
-    // Footer
-    function Footer() {
-      // Positionnement à 1,5 cm du bas
-      $this->SetY(-15);
-      // Police Arial italique 8
-      $this->SetFont('Helvetica','I',9);
-      // Numéro de page, centré (C)
-      $this->Cell(0,10,'Page '.$this->PageNo().'/{nb}',0,0,'C');
-    }
-  }
 
-  // On active la classe une fois pour toutes les pages suivantes
-// Format portrait (>P) ou paysage (>L), en mm (ou en points > pts), A4 (ou A5, etc.)
-$pdf = new PDF('P','mm','A4');
+if(isset($_POST['teleharger'])){
+class PDF extends FPDF
+{
+// En-tête
+function Header()
+{
+    // Logo
+   $this->Image('../assets/img/logo.png',10,6);
+    // Police Arial gras 15
+    $this->SetFont('Arial','B',15);
+    // Décalage à droite
+    $this->Cell (80);
+    $this->Cell (50);
+    // Titre
+    $this->Cell(100,10,'BY Gajelabs Solution');
+    // Saut de ligne
+    $this->Ln(20);
+}
 
-// Nouvelle page A4 (incluant ici logo, titre et pied de page)
-$pdf->AddPage();
-// Polices par défaut : Helvetica taille 9
-$pdf->SetFont('Helvetica','',9);
-// Couleur par défaut : noir
-$pdf->SetTextColor(0);
-// Compteur de pages {nb}
+// Pied de page
+function Footer()
+{
+    // Positionnement à 1,5 cm du bas
+    $this->SetY(-15);
+    // Police Arial italique 8
+    $this->SetFont('Arial','I',8);
+    // Numéro de page
+    $this->Cell(0,10,'Page '.$this->PageNo().'/{nb}',0,0,'C');
+}
+function title(){
+$this->SetFont('Arial','B',25);
+$this->Ln(20);
+$this->Cell (50);
+$this->Cell(10,10,'Service Quotation');
+}
+function content(){
+    $this->Ln(40);
+    $this->SetFont('Arial','B',15);
+    $this->Cell(10,10,'Nom Client: ');
+    $this->Cell(70);
+    $this->Cell(10,10,'IVAN');
+    
+    $this->Ln(20);
+    $this->SetFont('Arial','B',15);
+    $this->Cell(10,10,'Nom Service:  ');
+     $this->Cell(70);
+    $this->Cell(10,10,$_POST['nomService']);
+    
+    $this->Ln(20);
+    $this->SetFont('Arial','B',15);
+    $this->Cell(10,10,'Categorie Service  :  ');
+     $this->Cell(70);
+    $this->Cell(10,10, $_POST['categorieService']);
+    
+    $this->Ln(20);
+    $this->SetFont('Arial','B',15);
+    $this->Cell(10,10,'Nom de Domaine:  ');
+     $this->Cell(70);
+    $this->Cell(10,10,$_POST["nomDomain"]);
+    
+    $this->Ln(20);
+    $this->SetFont('Arial','B',15);
+    $this->Cell(10,10,'Mode d\' Hebergement :  ');
+     $this->Cell(70);
+    $this->Cell(10,10,$_POST["ModeHeber"]);
+
+}
+}
+
+
+// Instanciation de la classe dérivée
+$pdf = new PDF();
 $pdf->AliasNbPages();
+$pdf->AddPage();
+$pdf-> title();
 
-$pdf->SetFont('Helvetica','B',11);
-// couleur de fond de la cellule : gris clair
-$pdf->setFillColor(230,230,230);
-// Cellule avec les données du sous-titre sur 2 lignes, pas de bordure mais couleur de fond grise
-$pdf->Cell(75,6,'DU '."12".' AU 15',0,1,'L',1);    
-$pdf->Cell(75,6,'bonjuo',0,1,'L',1);        
-$pdf->Ln(10); // saut de ligne 10mm
+$pdf-> content();
 $pdf->Output();
+}else{
+    echo'e n est pas bon';
+}
 ?>

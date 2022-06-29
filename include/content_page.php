@@ -1,9 +1,11 @@
 <?php
+
+   
+// Contenue de la page crée par le plugin
 $content='
 <body>
-<form action="../wp-content/plugins/Service-Quotation/include/pdf.php" method="post">
-<section class="cotation">   
-   <div class="img"></div>  
+<form action="'.plugins_url("pdf.php",__FILE__).'" method="post">
+<section class="cotation">    
 <div class="allblog">
     <h3>INFORMATION SUR LE SERVICE </h3>
   <div class="content_item">  
@@ -13,35 +15,29 @@ $content='
   </div>
   <div class="option">
     <select name="nomService" id="nomService">
-        <option value="web">Site web</option>
+        <option value="Site web">Site web</option>
     </select>
 
     <select name="categorieService" id="categorieService">
-        <option value="">E-commerce</option>
-        <option value="">Maket-place</option>
-        <option value="">E-learning</option>
-        <option value="">Chat</option>
-        <option value="">Documentation</option>
+        <option value="E-commerce">E-commerce</option>
+        <option value="Maket-place">Maket-place</option>
+        <option value="E-learning<">E-learning</option>
+        <option value="Chat">Chat</option>
+        <option value="Documentation">Documentation</option>
     </select> 
   </div>
 </div>
-<h3>Type de site</h3>     
+<h3>Domaine</h3>     
 <div class="content_item ">  
     <div class="label">
-        <label for="typesite">Type de site</label>
         <label for="typesite">Nom de Dommaine</label>
     </div>
     <div class="option">
-        <select  name="typeSite" id="typeSite">
-            <option value="">Statique</option>
-            <option value="">Dynamique</option>
-        </select>  
-
-        <select  name="nomDomain" id=nomDomain">
-        <option value="">.com</option>
-        <option value="">.fr</option>
-        <option value="">.io</option>
-        <option value="">.org</option>
+        <select  name="nomDomain" id="nomDomain">
+        <option value=".com">.com</option>
+        <option value=".fr">.fr</option>
+        <option value=".io">.io</option>
+        <option value=".org">.org</option>
         </select>  
 
     </div>
@@ -49,21 +45,21 @@ $content='
     <h3>Hebergement</h3>     
 <div class="content_item ">  
     <div class="label">
-        <label for="nomHebergement">Nom de Hebergeur</label>
+        <label for="nomHebergeur">Nom de Hebergeur</label>
         <label for="categorieHerb">Mode d\' Hebergement</label>
     </div>
     <div class="option">
-        <select  name="nomHebergement" id="nomHebergement">
-            <option value="">Wordpress</option>
-            <option value="">Broostrape</option>
-            <option value="">GitHub</option>
+        <select  name="nomHebergeur" id="nomHebergeur">
+            <option value="Wordpress">Wordpress</option>
+            <option value="Broostrape">Broostrape</option>
+            <option value="Broostrape">GitHub</option>
         </select>  
          
         <select name="ModeHeber" id="ModeHeber">
-            <option value="">Personnel</option>
-            <option value="">Standard</option> 
-            <option value="">Prenum</option> 
-            <option value="">Expert</option> 
+            <option value="Personnel">Personnel</option>
+            <option value="Personnel">Standard</option> 
+            <option value="Prenum">Prenum</option> 
+            <option value="Expert">Expert</opExperttion> 
         </select>
     </div>
 </div>
@@ -90,21 +86,17 @@ $content='
 </div>
     </div>
         <div class="content_item "> 
-            <div class="submite">
-            <input type="button" class="submit" value="Request quotation">
-            </div>
-   
+        <div class="request_item"><h2 id="devis"></h2> </div><br>
        </div>
-       <div class="request">
-       <div class="request_item"><h2 id="devis"></h2> </div>
-           <div class="request_item">
-           <button type="submit"  name="request"><span class="dashicons dashicons-media-document" width=4></span>Telecharger Votre cotation</button>
-     
+       <div class="content_item "> 
+           <div class="submite">
+           <input type="button" class="submit" id="request" name="submit" value="Request quotation">
            </div>
-       </div>
+      </div>
    </div>
     </div>
 </section>
+[congratulation]
 </form>
 
 ';?>
