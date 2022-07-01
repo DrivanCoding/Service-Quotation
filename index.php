@@ -23,7 +23,8 @@ register_deactivation_hook(__FILE__,'out_quotation' );
 function quotation_page(){
     add_menu_page('Quotation','Quotation','administrator','quotation','quotation_function','dashicons-media-text',40);
     add_submenu_page('quotation',' conslutation| Reglage cotation','All quotation','administrator','quotation_conslute','consutation_quotation');
-   
+    include_once "include/content_page.php";
+    include_once "include/create_page.php";
 }
 
 add_action('admin_menu','quotation_page');
