@@ -11,3 +11,56 @@
     height:6vh;
     border:none;    
 }
+.display_input{
+    display:none;
+}
+table{
+    width: 90%;
+    border-collapse: collapse;
+}
+td{
+    background-color: rgb(237, 237, 237);
+    border: solid   1px gainsboro;
+    height: 8vh;
+    text-align: center;
+
+}
+.detaille{
+    background-color:rgb(208, 208, 208);
+    text-align: justify;
+    display:none;
+}
+th{
+    
+    border-left: solid 1px white ;
+    font-size: 3vh;
+}
+.pdf{
+    border: none;
+    font-weight: bold;
+    width: 70%;
+    height: 50%;
+    border-radius:12px ;
+    background: linear-gradient(rgba(0, 128, 0, 0.618),rgba(51, 255, 51, 0.508));
+}
+.pdf:hover{
+    background: linear-gradient(rgba(0, 128, 0, 0.848),rgba(51, 255, 51, 0.769));
+}
+.more{
+    width: 70%;
+    height: 50%;
+    border: none;
+    background-color: rgb(236, 236, 236);
+}
+.fermer_item{
+    width: 100%;
+}
+.fermer{
+    float: right;
+    color: red;
+    border: none;
+    background:none;
+    width:4vh;
+    height: 4vh;
+    font-size: 3.5vh;
+}

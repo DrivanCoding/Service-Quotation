@@ -1,10 +1,25 @@
 <?php
-
+$args=array(
+    'sort_order' =>'asc',
+    'sort_column' => 'post_title',
+    'post_type' =>'page',
+    'post_status' =>'publish'
+        );
+    $pages=get_pages( $args );
+    $link_page="#";
+    foreach ($pages as $key => $value) {
+        $id=$value->ID;
+        $post_title=$value->post_title;
+        if($post_title=='congratulation_quotation'){
+              $link_page= get_permalink($id);
+         break;
+        }
+    }
    
 // Contenue de la page crée par le plugin
 $content='
 <body>
-<form action="'.plugins_url("pdf.php",__FILE__).'" method="post">
+<form action="'.$link_page.'" method="post">
 <section class="cotation">    
 <div class="allblog">
     <h3>INFORMATION SUR LE SERVICE </h3>
@@ -19,11 +34,11 @@ $content='
     </select>
 
     <select name="categorieService" id="categorieService">
-        <option value="E-commerce">E-commerce</option>
-        <option value="Maket-place">Maket-place</option>
-        <option value="E-learning<">E-learning</option>
-        <option value="Chat">Chat</option>
-        <option value="Documentation">Documentation</option>
+        <option value="E-commerce" >E-commerce</option>
+        <option value="Maket-place" >Maket-place</option>
+        <option value="E-learning" >E-learning</option>
+        <option value="Chat" >Chat</option>
+        <option value="Documentation" >Documentation</option>
     </select> 
   </div>
 </div>
@@ -52,7 +67,7 @@ $content='
         <select  name="nomHebergeur" id="nomHebergeur">
             <option value="Wordpress">Wordpress</option>
             <option value="Broostrape">Broostrape</option>
-            <option value="Broostrape">GitHub</option>
+            <option value="GitHub">GitHub</option>
         </select>  
          
         <select name="ModeHeber" id="ModeHeber">
@@ -90,13 +105,13 @@ $content='
        </div>
        <div class="content_item "> 
            <div class="submite">
-           <input type="button" class="submit" id="request" name="submit" value="Request quotation">
+           <input type="submit" class="submit" id="request" name="submit" value="Request quotation">
            </div>
       </div>
    </div>
     </div>
 </section>
-[congratulation]
+
 </form>
 
 ';?>
