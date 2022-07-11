@@ -1,0 +1,37 @@
+/**
+ * Top rated products widget
+ */
+.elementor-widget-wp-widget-woocommerce_product_search,
+.widget_product_search{
+	
+	form{
+		position: relative;
+		width: 100%;
+		display:flex;
+	}
+	
+	.search-field{
+		width: 100%;
+		box-sizing: border-box;
+		padding-right: 50px;
+	}
+	
+	button{
+		position: absolute;
+		right: 0;
+		top: 50%;
+		transform: translateY(-50%);
+		font-size: 16px;
+		padding:10px 19px;
+		margin: 0;
+		text-align: center;
+		width: auto;
+		background: transparent;
+		border: none;
+
+		&:hover{
+			background: transparent;
+		}
+	}
+	
+}

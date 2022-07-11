@@ -1,0 +1,8 @@
+/**
+ * Alpha Color Picker CSS
+ */
+
+.customize-control-gutenix-alphacolor .wp-picker-container input[type=text].wp-color-picker {
+    width: 99px !important;
+    margin-right: 6px;
+}

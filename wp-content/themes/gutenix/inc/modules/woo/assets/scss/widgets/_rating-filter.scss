@@ -1,0 +1,50 @@
+/**
+ * Rating filter widget
+ */
+.elementor-widget-wp-widget-woocommerce_rating_filter,
+.widget_rating_filter{
+	ul{
+		list-style: none;
+		margin: 0;
+		
+		li{
+			position: relative;
+			padding-left: 25px;
+			
+			&:before{
+				content: "";
+				position: absolute;
+				left: 0;
+				top: 5px;
+				width: 18px;
+				height: 18px;
+				display: block;
+				border: 1px solid $wc-border-color;
+			}
+			
+			&.chosen{
+				&:after{
+					content: $wc-list-widget-current-item-icon;
+					position: absolute;
+					display: block;
+					font-size: 12px;
+					left: 3px;
+					top: 8px;
+					
+					@extend %icon-font-default;
+				}
+			}
+			
+			+ li{
+				margin-top: $wc-list-widget-space-between-items;
+			}
+			
+			.star-rating{
+				display: inline-block;
+				margin: 0;
+				vertical-align: middle;
+			}
+		}
+		
+	}
+}

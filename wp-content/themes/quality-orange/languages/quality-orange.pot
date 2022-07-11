@@ -1,0 +1,134 @@
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Quality orange\n"
+"POT-Creation-Date: 2022-05-26 14:18+0530\n"
+"PO-Revision-Date: 2019-03-25 17:30+0530\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
+"X-Generator: Poedit 3.0.1\n"
+"X-Poedit-Basepath: ..\n"
+"X-Poedit-Flags-xgettext: --add-comments=translators:\n"
+"X-Poedit-WPHeader: style.css\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-KeywordsList: __;_e;_n:1,2;_x:1,2c;_ex:1,2c;_nx:4c,1,2;esc_attr__;"
+"esc_attr_e;esc_attr_x:1,2c;esc_html__;esc_html_e;esc_html_x:1,2c;"
+"_n_noop:1,2;_nx_noop:3c,1,2;__ngettext_noop:1,2\n"
+"X-Poedit-SearchPath-0: .\n"
+"X-Poedit-SearchPathExcluded-0: *.js\n"
+
+#: functions.php:77 functions/customizer/customizer-copyright.php:18
+msgid ""
+"Proudly powered by <a href=\"https://wordpress.org\">WordPress</a> | Theme: "
+"<a href=\"https://webriti.com\" rel=\"nofollow\">Quality Orange</a> by "
+"Webriti"
+msgstr ""
+
+#: functions/customizer/customizer-blog-layout.php:25
+msgid "Blog Layout Setting"
+msgstr ""
+
+#: functions/customizer/customizer-blog-layout.php:31
+#: functions/customizer/customizer-header-layout.php:110
+msgid "Standard Layout"
+msgstr ""
+
+#: functions/customizer/customizer-blog-layout.php:35
+msgid "Masonry 3 Column"
+msgstr ""
+
+#: functions/customizer/customizer-copyright.php:8
+msgid "Footer Copyright Setting"
+msgstr ""
+
+#: functions/customizer/customizer-copyright.php:26
+msgid "Copyright Text"
+msgstr ""
+
+#: functions/customizer/customizer-header-layout.php:76
+msgid "Header Setting"
+msgstr ""
+
+#: functions/customizer/customizer-header-layout.php:80
+msgid "Header Layout"
+msgstr ""
+
+#: functions/customizer/customizer-header-layout.php:105
+msgid "Header Layout Setting"
+msgstr ""
+
+#: functions/customizer/customizer-header-layout.php:114
+msgid "Classic Dark Layout"
+msgstr ""
+
+#: functions/template-tag.php:87 functions/template-tag.php:197
+msgid "Toggle navigation"
+msgstr ""
+
+#: functions/template-tag.php:261 functions/template-tag.php:329
+msgid "Read More"
+msgstr ""
+
+#: functions/template-tag.php:266
+msgid "No Comments"
+msgstr ""
+
+#: functions/template-tag.php:266
+msgid "One comment"
+msgstr ""
+
+#: functions/template-tag.php:266
+#, php-format
+msgid "% comments"
+msgstr ""
+
+#: functions/template-tag.php:271 functions/template-tag.php:339
+msgid "In"
+msgstr ""
+
+#: functions/template-tag.php:334
+msgid "Leave a comment"
+msgstr ""
+
+#: header.php:19
+msgid "Skip to content"
+msgstr ""
+
+#. Theme Name of the plugin/theme
+msgid "Quality orange"
+msgstr ""
+
+#. Theme URI of the plugin/theme
+msgid "https://webriti.com/quality-orange-child-version-details-page/"
+msgstr ""
+
+#. Description of the plugin/theme
+msgid ""
+"A Business theme which is ideal for creating a corporate or business "
+"website. Quality Orange is a colored-variation child theme of Quality. "
+"Quality Orange comes with various locales."
+msgstr ""
+
+#. Author of the plugin/theme
+msgid "webriti"
+msgstr ""
+
+#. Author URI of the plugin/theme
+msgid "https://www.webriti.com"
+msgstr ""
+
+#. Template Name of the plugin/theme
+msgid "Blog Full Width"
+msgstr ""
+
+#. Template Name of the plugin/theme
+msgid "Blog Left Sidebar"
+msgstr ""
+
+#. Template Name of the plugin/theme
+msgid "Blog Right Sidebar"
+msgstr ""

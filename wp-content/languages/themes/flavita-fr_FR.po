@@ -1,0 +1,69 @@
+# Translation of Themes - Flavita in French (France)
+# This file is distributed under the same license as the Themes - Flavita package.
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2022-06-28 11:11:15+0000\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n > 1;\n"
+"X-Generator: GlotPress/4.0.0-alpha.1\n"
+"Language: fr\n"
+"Project-Id-Version: Themes - Flavita\n"
+
+#. Description of the theme
+#, gp-priority: high
+msgid "A powerful next generation theme for upcoming generations and traditional UI that focuses on the color combinations of solid and gradient colors, along with cool animations and attractive features. It's perfect for any type of business. View the demo of Flavita Pro https://www.nayrathemes.com/demo/pro/?theme=flavita"
+msgstr "Un thème puissant pour les générations à venir et les IU traditionnelles, qui met l’accent sur les combinaisons de couleurs unies et dégradées, ainsi que sur de jolies animations et des fonctionnalités attrayantes. Il est parfait pour tout type d’entreprise. Voir la démo de Flavita Pro https://www.nayrathemes.com/demo/pro/?theme=flavita"
+
+#. Theme Name of the theme
+#, gp-priority: high
+msgid "Flavita"
+msgstr "Flavita"
+
+#: footer.php:88
+msgid "<a href=\"https://www.nayrathemes.com/flavita-free/\" target=\"_blank\">Flavita</a>"
+msgstr "<a href=\"https://www.nayrathemes.com/flavita-free/\" target=\"_blank\">Flavita</a>"
+
+#: inc/customize/flavita-premium.php:36
+msgid "Show Some Love"
+msgstr "Afficher un peu d’amour"
+
+#: inc/customize/flavita-premium.php:32
+msgid "Free Vs Pro"
+msgstr "Gratuit Vs Pro"
+
+#: inc/customize/flavita-premium.php:30
+msgid "Get Support"
+msgstr "Obtenir de l’aide"
+
+#: inc/customize/flavita-premium.php:28
+msgid "View Documentation"
+msgstr "Voir la documentation"
+
+#: inc/customize/flavita-premium.php:12 inc/customize/flavita-premium.php:34
+msgid "Upgrade to Pro"
+msgstr "Passer à la version Pro"
+
+#: header.php:18
+msgid "Skip to content"
+msgstr "Aller au contenu"
+
+#: footer.php:10
+msgid "footer-effect-active"
+msgstr "footer-effect-active"
+
+#. Theme URI of the theme
+#, gp-priority: low
+msgid "https://www.nayrathemes.com/flavita-free/"
+msgstr "https://www.nayrathemes.com/flavita-free/"
+
+#. Author URI of the theme
+#, gp-priority: low
+msgid "https://www.nayrathemes.com/"
+msgstr "https://www.nayrathemes.com/"
+
+#. Author of the theme
+#, gp-priority: low
+msgid "Nayra Themes"
+msgstr "Nayra Themes"

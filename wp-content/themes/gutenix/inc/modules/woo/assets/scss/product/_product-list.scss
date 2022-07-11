@@ -1,0 +1,132 @@
+/**
+ * Product list styles
+ */
+ul.products.products-list {
+	li.product {
+		.product-content {
+			.woocommerce-loop-product__link {
+				display: block;
+				position: relative;
+				margin: 0 0 20px;
+
+				@media (min-width: 500px) {
+					float: left;
+					width: 200px;
+					margin-right: 30px;
+				}
+			}
+			.woocommerce-loop-product__category {
+				display: block;
+				
+				@include media-breakpoint-up(lg) {
+					max-width: 45%;
+					min-width: 180px;
+				}
+			}
+			.woocommerce-loop-product__title {
+				display: block;
+				margin-bottom: 8px;
+				
+				@include media-breakpoint-up(lg) {
+					max-width: 45%;
+					min-width: 180px;
+				}
+			}
+			.woocommerce-loop-product__description {
+				display: block;
+				
+				@include media-breakpoint-up(lg) {
+					max-width: 45%;
+					min-width: 180px;
+				}
+			}
+			.gutenix-loop-product-summary-wrap {
+				position: relative;
+				
+				@media (min-width: 500px) {
+					display: inline-block;
+					vertical-align: middle;
+					width: calc(100% - 230px);
+				}
+				
+				.star-rating {
+					@include media-breakpoint-up(lg) {
+						position: absolute;
+						top: 0;
+						right: 0;
+					}
+				}
+			}
+		}
+	}
+}
+
+@media (min-width: 1025px) {
+	ul.products.products-list {
+		li.product {
+			.product-content {
+				.gutenix-loop-product-summary-wrap {
+					/* .price {
+						position: absolute;
+						right: 0;
+						top: 40px;
+					} */
+					.button {
+						position: absolute;
+						right: 0;
+						top: 86px;
+						max-width: 270px;
+					}
+					.jet-compare-button__container {
+						.jet-compare-button__link {
+							position: absolute;
+							right: 0;
+							top: 86px;
+							max-width: 270px;
+						}
+					}
+					.jet-wishlist-button__container {
+						.jet-wishlist-button__link {
+							position: absolute;
+							right: 0;
+							top: 86px;
+							max-width: 270px;
+						}
+					}
+				}
+			}
+		}
+	}
+	.jet-compare-button__container {
+		ul.products.products-list {
+			li.product {
+				.product-content {
+					.gutenix-loop-product-summary-wrap {
+						.jet-compare-button__link {
+							position: absolute;
+							right: 0;
+							top: 86px;
+							max-width: 270px;
+						}
+					}
+				}
+			}
+		}
+	}
+	.jet-wishlist-button__container {
+		ul.products.products-list {
+			li.product {
+				.product-content {
+					.gutenix-loop-product-summary-wrap {
+						.jet-wishlist-button__link {
+							position: absolute;
+							right: 0;
+							top: 86px;
+							max-width: 270px;
+						}
+					}
+				}
+			}
+		}
+	}
+}

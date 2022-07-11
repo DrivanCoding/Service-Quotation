@@ -1,0 +1,118 @@
+/**
+ * Single product reviews
+ */
+/*     single product comment form       */
+ol.commentlist {
+	list-style: none;
+	margin: 0;
+	li {
+		.comment_container {
+			position: relative;
+			display: -webkit-box;
+			display: -ms-flexbox;
+			display: flex;
+			-ms-flex-wrap: wrap;
+			flex-wrap: wrap;
+			img {
+				-ms-flex-negative: 0;
+				flex-shrink: 0;
+				width: 60px;
+				height: 60px;
+				margin: 0 15px 5px 0;
+				border-radius: 50%;
+			}
+			.comment-text {
+				-webkit-box-flex: 1;
+				-ms-flex: 1 1 200px;
+				flex: 1 1 200px;
+				max-width: 100%;
+				.star-rating {
+					display: inline-block;
+					margin-top: 0;
+					margin-bottom: 0;
+					margin-right: 10px;
+				}
+				.meta {
+					display: inline-block;
+					margin-bottom: 0;
+					font-size: 18px;
+					line-height: 28px;
+				}
+				.description {
+					margin-top: 10px;
+					padding: 1rem;
+					margin-bottom: 0;
+					font-size: 18px;
+					line-height: 28px;
+					border: 1px solid #e8e9eb;
+					border-radius: 4px;
+				}
+			}
+		}
+		+ {
+			li {
+				margin-top: 50px;
+			}
+		}
+	}
+}
+.comment-respond {
+	.comment-reply-title {
+		display: block;
+		margin: 30px 0 10px 0;
+		font-size: 24px;
+	}
+}
+
+/*     single product comment form       */
+.woocommerce-Reviews {
+	.comment-form {
+		label {
+			display: block;
+			font-size: 16px;
+			line-height: 19px;
+			margin: 0 0 12px;
+		}
+		input {
+			display: block;
+		}
+	}
+	.comment-form-comment {
+		label {
+			font-weight: 700;
+		}
+	}
+	.comment-form-author {
+		label {
+			font-weight: 700;
+		}
+	}
+	.comment-form-email {
+		label {
+			font-weight: 700;
+		}
+	}
+	.comment-form-url {
+		label {
+			font-weight: 700;
+		}
+	}
+	.comment-form-rating {
+		margin-bottom: 18px;
+		label {
+			display: inline-block;
+			font-weight: 700;
+		}
+		.stars {
+			width: calc(5.8em + 1.2em);
+		}
+	}
+	.comment-form-cookies-consent {
+		input {
+			display: inline-block;
+		}
+		label {
+			display: inline-block;
+		}
+	}
+}

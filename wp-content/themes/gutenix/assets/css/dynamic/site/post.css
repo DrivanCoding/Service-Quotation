@@ -1,0 +1,85 @@
+/* #Post */
+.sticky-label {
+	color: $invert_text_color;
+	background-color: $primary_color;
+}
+
+.entry-meta,
+.comment-meta,
+.entry-footer {
+	color: $secondary_text_color;
+}
+
+.cat-links {
+	color: $link_color;
+}
+
+.cat-links--primary a {
+	background-color: $primary_color;
+	color: $invert_text_color;
+}
+
+.cat-links--primary a:hover,
+.cat-links--primary a:focus {
+	background-color: $secondary_color;
+}
+
+.tags-links--primary a {
+	color: $secondary_text_color;
+}
+.tags-links--primary a:hover {
+	color: $link_color;
+}
+
+.tags-links__prefix {
+	color: $primary_text_color;
+}
+
+/* #Post Navigation */
+.navigation .nav-icon {
+	color: @lighten( $secondary_text_color, 18 );
+}
+
+.pagination .page-numbers:not(.prev):not(.next) {
+	color: $secondary_text_color;
+}
+
+.navigation a:hover .nav-icon,
+.pagination a.page-numbers:not(.prev):not(.next):hover,
+.pagination .current.page-numbers:not(.prev):not(.next),
+.post-navigation a:hover .nav-post-title{
+	color: $link_color;
+}
+
+.post-navigation .nav-post-title {
+	font-style: $h5_font_style;
+	font-weight: $h5_font_weight;
+	font-size: $h5_font_size{px};
+	line-height: $h5_line_height;
+	font-family: @font_family( $h5_font_family );
+	letter-spacing: $h5_letter_spacing{px};
+	color: $h5_text_color;
+}
+
+/* #Single Post */
+.post-author-bio__title a,
+#cancel-comment-reply-link {
+	color: $link_color;
+}
+
+.post-author-bio__title a:hover,
+#cancel-comment-reply-link:hover {
+	color: $link_hover_color;
+}
+
+.comment-respond .comment-notes,
+.comment-respond .logged-in-as,
+.comment-respond .must-log-in {
+	color: $secondary_text_color;
+}
+
+/* #Customize Partial Placeholder */
+.customize-partial-placeholder {
+	color: $invert_text_color;
+	background-color: @alpha( $primary_color, 80 );
+}

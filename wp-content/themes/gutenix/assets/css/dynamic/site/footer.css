@@ -1,0 +1,45 @@
+/* #Footer */
+.footer-area-wrapper {
+	background-color: $footer_widgets_bg;
+	@background_img( $footer_widgets_bg_img, $footer_widgets_bg_size, $footer_widgets_bg_position, $footer_widgets_bg_repeat, $footer_widgets_bg_attachment );
+}
+.footer-area-wrapper .widget-title {
+	font-style: $footer_widgets_title_font_style;
+	text-transform: $footer_widgets_title_transform;
+	font-weight: $footer_widgets_title_font_weight;
+	letter-spacing: $footer_widgets_title_letter_spacing{px};
+	color: $footer_widgets_title_color;
+}
+.footer-area-wrapper .widget {
+	letter-spacing: $footer_widgets_content_letter_spacing{px};
+	color: $footer_widgets_content_color;
+}
+.footer-area-wrapper .widget a {
+	font-weight: $footer_widgets_link_font_weight;
+	color: $footer_widgets_link_color;
+}
+.footer-area-wrapper .widget a:hover {
+	color: $footer_widgets_link_hover_color;
+}
+
+.footer-bar {
+	color: $footer_text_color;
+	font-size: $footer_font_size{px};
+	background-color: $footer_bg;
+	@background_img( $footer_bg_img, $footer_bg_size, $footer_bg_position, $footer_bg_repeat, $footer_bg_attachment );
+}
+.footer-bar.border-top-wide {
+	border-top: $footer_border_top_width{px} solid $footer_border_top_color;
+}
+.footer-bar.border-top-boxed .gutenix-container:before{
+	height: $footer_border_top_width{px};
+	background-color: $footer_border_top_color;
+}
+
+.footer-bar a {
+	color: $footer_link_color;
+}
+
+.footer-bar a:hover {
+	color: $footer_link_hover_color;
+}

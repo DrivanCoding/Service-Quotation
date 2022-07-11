@@ -1,0 +1,106 @@
+/* #Menu */
+.main-navigation--default .menu > .menu-item > a {
+	font-family: @font_family( $main_menu_font_family );
+	text-transform: $main_menu_text_transform;
+	font-style: $main_menu_font_style;
+	font-weight: $main_menu_font_weight;
+	line-height: $main_menu_line_height;
+	font-size: $main_menu_font_size{px};
+	letter-spacing: $main_menu_letter_spacing{px};
+	color: $main_menu_link_color;
+}
+
+.main-navigation--default .menu > .menu-item:hover > a,
+.main-navigation--default .menu > .menu-item.focus > a,
+.main-navigation--default .menu > .current_page_item > a,
+.main-navigation--default .menu > .current-menu-item > a,
+.main-navigation--default .menu > .current_page_ancestor > a,
+.main-navigation--default .menu > .current-menu-ancestor > a {
+	color: $main_menu_link_hover_color;
+}
+
+.main-navigation--default .menu:not(.menu--hover-framed) > .menu-item:before,
+.main-navigation--default .menu:not(.menu--hover-framed) > .menu-item:after {
+	background-color: $main_menu_link_hover_color;
+}
+
+.main-navigation--default .menu--hover-framed > .menu-item:before,
+.main-navigation--default .menu--hover-framed > .menu-item:after {
+	border-color: $main_menu_link_hover_color;
+}
+
+#site-navigation.main-navigation--default .menu .sub-menu {
+	background-color: $sub_menu_bg;
+}
+
+.main-navigation--default .menu .sub-menu a {
+	text-transform: $sub_menu_text_transform;
+	font-style: $sub_menu_font_style;
+	font-weight: $sub_menu_font_weight;
+	line-height: $sub_menu_line_height;
+	font-size: $sub_menu_font_size{px};
+	letter-spacing: $sub_menu_letter_spacing{px};
+	@css_property( color, $sub_menu_link_color );
+	@css_property( background-color, $sub_menu_link_bg );
+}
+
+.main-navigation--default .menu .sub-menu .menu-item:hover > a,
+.main-navigation--default .menu .sub-menu .menu-item.focus > a,
+.main-navigation--default .menu .sub-menu .current_page_item > a,
+.main-navigation--default .menu .sub-menu .current-menu-item > a,
+.main-navigation--default .menu .sub-menu .current_page_ancestor > a,
+.main-navigation--default .menu .sub-menu .current-menu-ancestor > a {
+	@css_property( color, $sub_menu_link_hover_color );
+	@css_property( background-color, $sub_menu_link_hover_bg );
+}
+
+/* #Vertical Menu */
+.header-bar--style-8 .menu-toggle-inner,
+.header-bar--style-8 .menu-toggle-inner:before,
+.header-bar--style-8 .menu-toggle-inner:after {
+	background-color: $vertical_menu_btn_color;
+}
+
+.main-navigation.main-navigation--vertical .menu a {
+	font-family: @font_family( $vertical_menu_font_family );
+	text-transform: $vertical_menu_text_transform;
+	font-style: $vertical_menu_font_style;
+	font-weight: $vertical_menu_font_weight;
+	line-height: $vertical_menu_line_height;
+	letter-spacing: $vertical_menu_letter_spacing{px};
+}
+.main-navigation.main-navigation--vertical .menu a,
+.main-navigation.main-navigation--vertical .menu-back-btn {
+	color: $vertical_menu_link_color;
+}
+
+.main-navigation.main-navigation--vertical .menu-back-btn:hover,
+.main-navigation.main-navigation--vertical .menu a:hover,
+.main-navigation.main-navigation--vertical .menu > .menu-item.focus > a,
+.main-navigation.main-navigation--vertical .menu > .current_page_item > a,
+.main-navigation.main-navigation--vertical .menu > .current-menu-item > a,
+.main-navigation.main-navigation--vertical .menu > .current_page_ancestor > a,
+.main-navigation.main-navigation--vertical .menu > .current-menu-ancestor > a,
+.main-navigation.main-navigation--vertical .menu .sub-menu .menu-item.focus > a,
+.main-navigation.main-navigation--vertical .menu .sub-menu .current_page_item > a,
+.main-navigation.main-navigation--vertical .menu .sub-menu .current-menu-item > a,
+.main-navigation.main-navigation--vertical .menu .sub-menu .current_page_ancestor > a,
+.main-navigation.main-navigation--vertical .menu .sub-menu .current-menu-ancestor > a {
+	color: $vertical_menu_link_hover_color;
+}
+
+.header-bar--style-8 .header-bar__sidebar--full-screen:after {
+	opacity: 0.$vertical_menu_bg_opacity;
+	background-color: $vertical_menu_bg_color;
+}
+
+.header-bar--style-8 .menu-toggle-close path {
+	fill: $vertical_menu_close_color;
+}
+
+.header-bar--style-8 .social-list--header a {
+	color: $vertical_menu_link_color;
+}
+.header-bar--style-8 .social-list--header a:hover {
+	color: $vertical_menu_link_hover_color;
+}

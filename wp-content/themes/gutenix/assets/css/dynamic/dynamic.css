@@ -1,0 +1,191 @@
+/* #Typography */
+html {
+	font-size: @font_size(20, multiple, round, 6.25)%;
+}
+
+body {
+	text-transform: $body_text_transform;
+	font-style: $body_font_style;
+	font-weight: $body_font_weight;
+	line-height: $body_line_height;
+	font-family: @font_family( $body_font_family );
+	letter-spacing: $body_letter_spacing{px};
+	text-align: $body_text_align;
+	color: $primary_text_color;
+}
+h1,
+.h1-style {
+	text-transform: $h1_text_transform;
+	font-style: $h1_font_style;
+	font-weight: $h1_font_weight;
+	line-height: $h1_line_height;
+	font-family: @font_family( $h1_font_family );
+	letter-spacing: $h1_letter_spacing{px};
+	text-align: $h1_text_align;
+	color: $h1_text_color;
+}
+h2,
+.h2-style {
+	text-transform: $h2_text_transform;
+	font-style: $h2_font_style;
+	font-weight: $h2_font_weight;
+	line-height: $h2_line_height;
+	font-family: @font_family( $h2_font_family );
+	letter-spacing: $h2_letter_spacing{px};
+	text-align: $h2_text_align;
+	color: $h2_text_color;
+}
+h3,
+.h3-style {
+	text-transform: $h3_text_transform;
+	font-style: $h3_font_style;
+	font-weight: $h3_font_weight;
+	line-height: $h3_line_height;
+	font-family: @font_family( $h3_font_family );
+	letter-spacing: $h3_letter_spacing{px};
+	text-align: $h3_text_align;
+	color: $h3_text_color;
+}
+h4,
+.h4-style {
+	text-transform: $h4_text_transform;
+	font-style: $h4_font_style;
+	font-weight: $h4_font_weight;
+	line-height: $h4_line_height;
+	font-family: @font_family( $h4_font_family );
+	letter-spacing: $h4_letter_spacing{px};
+	text-align: $h4_text_align;
+	color: $h4_text_color;
+}
+h5,
+.h5-style {
+	text-transform: $h5_text_transform;
+	font-style: $h5_font_style;
+	font-weight: $h5_font_weight;
+	line-height: $h5_line_height;
+	font-family: @font_family( $h5_font_family );
+	letter-spacing: $h5_letter_spacing{px};
+	text-align: $h5_text_align;
+	color: $h5_text_color;
+}
+h6,
+.h6-style {
+	text-transform: $h6_text_transform;
+	font-style: $h6_font_style;
+	font-weight: $h6_font_weight;
+	line-height: $h6_line_height;
+	font-family: @font_family( $h6_font_family );
+	letter-spacing: $h6_letter_spacing{px};
+	text-align: $h6_text_align;
+	color: $h6_text_color;
+}
+
+a,
+h1 a:hover,
+h2 a:hover,
+h3 a:hover,
+h4 a:hover,
+h5 a:hover,
+h6 a:hover {
+	color: $link_color;
+}
+a:hover { color: $link_hover_color; }
+
+blockquote {
+	border-color: $primary_color;
+}
+
+blockquote, mark, ins {
+	color: $primary_color;
+}
+
+blockquote cite, abbr, acronym, .wp-caption-text, .breadcrumbs {
+	color: $secondary_text_color;
+}
+
+/* #Forms */
+input,
+select,
+optgroup,
+textarea {
+	font-style: $input_font_style;
+	text-transform: $input_text_transform;
+	font-weight: $input_font_weight;
+	line-height: $input_line_height;
+	font-family: @font_family( $input_font_family );
+	letter-spacing: $input_letter_spacing{px};
+	color: $input_text_color;
+}
+
+select                      { color: $input_placeholder_color; }
+::-webkit-input-placeholder { color: $input_placeholder_color; }
+::-moz-placeholder          { color: $input_placeholder_color; }
+:-ms-input-placeholder      { color: $input_placeholder_color; }
+:-moz-placeholder           { color: $input_placeholder_color; }
+
+.search-form__submit {
+	color: @lighten( $secondary_text_color, 18 );
+}
+
+.search-form__submit:hover {
+	color: $primary_color;
+}
+
+/* #Layout */
+@media (min-width: 1200px) {
+	#page .gutenix-container {
+		max-width: $container_width{px};
+	}
+}
+
+
+/* #ToTop Button */
+#toTop {
+	padding: $totop_vertical_padding{px} $totop_horizontal_padding{px};
+	border-radius: $totop_border_radius{px};
+	background-color: $totop_bg_color;
+	color: $totop_icon_color;
+}
+
+#toTop:hover {
+	background-color: $totop_bg_color_hover;
+	color: $totop_icon_color_hover;
+}
+
+/* #Page preloader */
+.page-preloader-cover .bar:before{
+	background-color: $primary_color;
+}
+
+/* Buttons */
+.wp-block-button__link {
+	background-color: $primary_color;
+}
+.wp-block-button__link:hover {
+	color: $invert_text_color;
+	background-color: $secondary_color;
+}
+.is-style-outline .wp-block-button__link {
+	color: $primary_color;
+	border-color: $primary_color;
+}
+.is-style-outline .wp-block-button__link:hover {
+	color: $invert_text_color;
+	border-color: $secondary_color;
+	background-color: $secondary_color;
+}
+
+/* Text meant only for screen readers. */
+.screen-reader-shortcut,
+.screen-reader-text:focus {
+	color: $invert_text_color !important;
+	background-color: $primary_color !important;
+}
+
+.primary_color {
+	color: $primary_color;
+}
+.primary_bg_color {
+	background-color: $primary_color;
+}
+

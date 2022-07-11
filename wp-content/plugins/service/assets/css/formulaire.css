@@ -1,0 +1,119 @@
+.cotation{
+    display: flex;
+  justify-content: center;
+    align-items: center;
+}
+.allblog{
+    width: 60%;
+    height:100% ;
+    box-shadow: 0px 0px 5px 0px gainsboro;
+    display: flex;
+    flex-direction: column;
+    
+    background-color: rgb(252, 255, 250);
+}
+fieldset{
+    
+    height:6vh;
+    margin: 10px;
+    border: none ;
+    
+}
+legend{
+    font-size: 12px;
+}
+select{
+    color: gray;
+    width: 40vh;
+    height: 6vh;
+    border-radius: 2px;
+    border: solid 1px rgb(228, 228, 228);
+    text-align: center;
+    background-color: transparent;
+    position: relative;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+       
+}
+
+.content_item{
+    display: flex;
+}
+.labelOption{
+    display: flex;
+    flex-direction: column;
+    justify-content:space-around;
+    align-items: flex-end;
+    margin: 10px;
+    font-size: 20px;
+
+}
+
+span{
+    display: flex;
+    flex-direction: column;
+    justify-content:space-around;
+    align-items: flex-end;
+    margin: 10px;
+    font-size: 20px;
+
+}
+.option{
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+}
+input[type="submit"]{
+    width: 25vh;
+    height: 6vh;
+    border-radius: 2px;
+    border: none;
+    background-color: aquamarine;
+    margin-bottom: 10px;
+}
+#option_detaille,.infosClient {
+    box-shadow: 0PX 0PX 5PX 0PX rgb(236, 233, 233);
+    width: 70%;
+    margin-top: 30px;
+}
+.infosClient {
+    width: 90%;
+    height: 30vh;
+    margin-bottom: 18px;
+}
+.detaille_mode{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.titre, .submite, .request_item ,.client {
+     width: 100%;
+     display: flex;
+     justify-content:center ;
+}
+.titre  {
+    text-transform: uppercase;
+}
+
+body{
+background: linear-gradient(rgba(255, 255, 255, 0.615),rgba(155, 151, 151, 0.536)), url(a.png);
+font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+.imgquotation{
+width: 20vh;
+background: antiquewhite;
+height: 127VH;
+
+}
+.input{
+color: gray;
+    width: 40vh;
+    height: 6vh;
+    border-radius: 2px;
+    border: solid 1px rgb(228, 228, 228);
+    padding:2px;
+    background-color: transparent;
+    font-size: 15px;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    
+}

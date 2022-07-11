@@ -1,0 +1,81 @@
+/**
+ * Prices
+ */
+
+// Grid product
+.price {
+	display: inline-block;
+	width: 49%;
+	font-size: $wc-grid-price-fz;
+	line-height: $wc-grid-price-lh;
+	margin: 0 0 6px;
+	
+	ins, del {
+		line-height: 1;
+		text-decoration: none;
+	}
+
+	ins {
+		font-style: normal;
+		border: none;
+		margin-right: 5px;
+		color: #da4747;
+		@if ($wc-grid-ins-price-fz != $wc-grid-price-fz) {
+			font-size: $wc-grid-ins-price-fz;
+		}
+	}
+
+	del {
+		margin-right: 5px;
+		text-decoration: line-through;
+		color: #a0a3aa;
+		font-size: 16px;
+	}
+
+}
+
+// List product
+.product-list .price {
+	margin: 10px 0;
+
+	@if ($wc-list-price-fz != $wc-grid-price-fz) {
+		font-size: $wc-list-price-fz;
+		line-height: $wc-list-price-lh;
+
+		@if ($wc-list-price-fz != $wc-list-ins-price-fz) {
+			ins {
+				font-size: $wc-list-ins-price-fz;
+			}
+		}
+
+		@if ($wc-list-price-fz != $wc-list-del-price-fz) {
+			del {
+				font-size: $wc-list-del-price-fz;
+			}
+		}
+	}
+}
+
+// Single product
+.single-product .summary .price {
+	text-align: left;
+	width: 100%;
+	margin: 0 0 25px;
+	@if ($wc-single-price-fz != $wc-grid-price-fz) {
+		font-size: $wc-single-price-fz;
+		line-height: $wc-single-price-lh;
+
+		@if ($wc-single-price-fz != $wc-single-ins-price-fz) {
+			ins {
+				font-size: $wc-single-ins-price-fz;
+			}
+		}
+
+		@if ($wc-single-price-fz != $wc-single-del-price-fz) {
+			del {
+				font-size: $wc-single-del-price-fz;
+			}
+		}
+	}
+}
+

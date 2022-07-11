@@ -1,0 +1,119 @@
+/*
+Theme Name: Quality green
+Theme URI: https://webriti.com/quality-green-child-version-details-page/
+Author: webriti
+Author URI: https://www.webriti.com
+Description: A Business theme which is ideal for creating a corporate or business website. Quality Green is a colored-variation child theme of Quality. Quality Green comes with various locales.
+Template: quality
+Tags: full-width-template, translation-ready, theme-options, custom-menu, threaded-comments, two-columns, sticky-post, blog, footer-widgets, featured-images, right-sidebar, left-sidebar
+Version: 1.3.8
+Requires at least: 4.7
+Tested up to: 6.0
+Requires PHP: 5.4
+License: GPLv2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Text Domain: quality-green
+*/
+
+/*===================================================================================*/
+/*  Navbar-3
+/*===================================================================================*/
+.navbar-header.index3,.navbar-header.index3 .site-title {
+    text-align: center;
+    background-color: #fff;
+    float: none;
+    padding: 10px 0 10px;
+}
+.index3 .site-title.site-branding-text {
+    float: none;
+}
+.site-title {
+   float: left;
+ padding: 26px 0px 26px 0px;
+}
+@media (max-width: 600px) {
+.site-title {
+    float: none;
+    text-align: center;
+}
+}
+.index3 .navbar-brand {
+	height: unset;
+    display: inline-block;
+    float: none;
+    margin-right: 0;
+    padding: 10px 0px 10px;
+}
+.navbar-custom.navbar3 {
+    background-color: #121213;
+}
+.navbar3 .header-module {float: right;}
+.navbar-custom.navbar3 .navbar-nav li > a {
+    color: #e8e8e8;
+}
+.navbar-custom.navbar3 .dropdown-menu > li > a {color: #bbb}
+.navbar3 .cart-header {background: #e8e8e8;}
+.navbar3 .cart-header > a.cart-icon {color: #121213;}
+.navbar3 .search-box-outer a {color: #e8e8e8;}
+.navbar-custom.navbar3 .navbar-toggle .icon-bar {background: #ffffff;}
+@media (max-width: 1100px) {
+	.navbar3 .header-module {justify-content: center;display: flex;float: none;}
+	.navbar.navbar3 .custom-social-icons.text-right {text-align: center;float: none;}
+	.navbar-custom.navbar3 li a, .navbar-custom.navbar3 .dropdown-search {
+	    border-bottom: none;
+	}
+	.navbar3 .navbar-toggle {
+		float: none;
+	    margin: 28px auto 30px;
+	}
+
+    
+    
+}
+
+.site-description{
+    display: inline-block;
+}
+
+.news #blog-default:nth-child(2n+1){
+      clear:left;
+}
+
+.service-5 .post:hover .entry-header .entry-title a{
+    color:#ffffff;
+}
+.screen-reader-text {
+    clip: rect(1px, 1px, 1px, 1px);
+    position: absolute !important;
+    height: 1px;
+    width: 1px;
+    overflow: hidden;
+    word-wrap: normal !important;
+}
+.screen-reader-text:focus {
+    background-color: #f1f1f1;
+    border-radius: 3px;
+    box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.6);
+    clip: auto !important;
+    color: #21759b;
+    display: block;
+    font-size: 14px;
+    font-size: 0.875rem;
+    font-weight: bold;
+    height: auto;
+    left: 5px;
+    line-height: normal;
+    padding: 15px 23px 14px;
+    text-decoration: none;
+    top: 5px;
+    width: auto;
+    z-index: 100000; /* Above WP toolbar. */
+}
+.no-js .some-element .screen-reader-text {
+    position: static;
+    -webkit-clip-path: none;
+    clip-path: none;
+    width: auto;
+    height: auto;
+    margin: 0;
+}

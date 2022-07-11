@@ -1,0 +1,41 @@
+/**
+ * Product categories widget
+ */
+.elementor-widget-wp-widget-woocommerce_product_categories,
+.widget_product_categories{
+	
+	select{
+		width: 100%;
+	}
+	
+	.product-categories{
+		list-style: none;
+		margin: 0;
+		
+		ul{
+			list-style: none;
+			margin-left: 0;
+		}
+		
+		li > ul{
+			padding-left: 25px;
+		}
+		
+		li{
+			position: relative;
+			
+			+ li{
+				margin-top: $wc-list-widget-space-between-items;
+			}
+
+			.children{
+				margin-top: $wc-list-widget-space-between-items;
+			}
+			
+		
+			.count{
+				margin-left: 5px;
+			}
+		}
+	}
+}

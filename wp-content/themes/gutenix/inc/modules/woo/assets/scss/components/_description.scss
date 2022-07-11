@@ -1,0 +1,28 @@
+/**
+ * Description
+ */
+
+.single-product {
+	.summary {
+		.woocommerce-product-details__short-description {
+			font-size: 20px;
+			line-height: 33px;
+			margin-bottom: 36px;
+
+			& > ul {
+				margin-left: 18px;
+			}
+		}
+	}
+	
+	&.no-sidebar {
+		.summary {
+			padding-top: 50px;
+
+			@include media-breakpoint-up(md) {
+				padding-left: 25px;
+				padding-top: 0;
+			}
+		}
+	}
+}

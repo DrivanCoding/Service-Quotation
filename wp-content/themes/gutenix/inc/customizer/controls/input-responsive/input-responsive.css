@@ -1,0 +1,96 @@
+.gutenix-input-responsive-btns {
+  display: inline-block;
+  float: right;
+  line-height: 1;
+  margin-top: -23px;
+}
+
+.gutenix-input-responsive-btns > li {
+  margin-bottom: 0;
+  display: none;
+}
+
+.gutenix-input-responsive-btns > li.active {
+  display: inline-block;
+}
+
+.gutenix-input-responsive-btns button[type="button"] {
+  padding: 0;
+  cursor: pointer;
+  background: none;
+  border: none;
+  opacity: .75;
+  outline: none;
+}
+
+.gutenix-input-responsive-btns button[type="button"] > i {
+  width: 15px;
+  height: 15px;
+  font-size: 15px;
+}
+
+.gutenix-input-field-settings-modal .gutenix-input-responsive-btns {
+  margin-top: 6px;
+}
+
+.customize-control-gutenix-input-responsive .input-wrapper {
+  overflow: hidden;
+}
+
+.customize-control-gutenix-input-responsive .input-wrapper input {
+  display: none;
+  width: 82%;
+  float: none;
+}
+
+.customize-control-gutenix-input-responsive .input-wrapper input.active {
+  display: block;
+}
+
+.customize-control-gutenix-input-responsive .input-wrapper .gutenix-input-responsive-select {
+  width: 50px;
+  margin: 0;
+  display: none;
+  padding: .1em;
+  margin-left: 2px;
+  float: none;
+}
+
+.customize-control-gutenix-input-responsive .input-wrapper .gutenix-input-responsive-input.active + .gutenix-input-responsive-select {
+  /* display: block; */
+  width: 17%;
+  float: none;
+}
+
+.customize-control-gutenix-input-responsive .input-wrapper .gutenix-input-non-reponsive.gutenix-input-responsive-input {
+  display: inline-block;
+}
+
+.customize-control-gutenix-input-responsive .input-wrapper .gutenix-input-non-reponsive.gutenix-input-responsive-input.active {
+  display: inline-block;
+}
+
+.customize-control-gutenix-input-responsive .input-wrapper .gutenix-input-non-reponsive.gutenix-input-responsive-select {
+  display: inline-block;
+}
+
+#customize-control-gutenix-inputra-settings-font-size-body.customize-control-gutenix-input-responsive .input-wrapper {
+  display: inline-block;
+}
+
+.customize-control-gutenix-input-responsive .input-wrapper .gutenix-input-responsive-select {
+  display: none;
+}
+
+.customize-control-gutenix-input-responsive .input-wrapper .gutenix-input-responsive-input {
+  width: 100%;
+}
+
+.input-wrapper.gutenix-input-responsive-wrapper {
+  display: inline-flex;
+  justify-content: space-between;
+  margin-right: 0;
+  align-items: flex-start;
+  flex: 0 1;
+  width: 100%;
+}

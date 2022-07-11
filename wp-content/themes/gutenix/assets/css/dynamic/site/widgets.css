@@ -1,0 +1,56 @@
+/* #Widgets */
+.widget_categories a,
+.widget_archive a,
+.widget_pages a,
+.widget_meta a,
+.widget_nav_menu a,
+.widget_calendar,
+.widget_recent_comments .recentcomments,
+.widget_rss .rss-date,
+.widget_rss cite,
+.widget_recent_entries .post-date,
+.widget_tag_cloud a,
+.wp-block-archives-list a,
+.wp-block-categories-list a,
+.wp-block-latest-posts__post-date{
+	color: $secondary_text_color;
+}
+
+.widget_categories li,
+.widget_categories a:hover,
+.widget_archive li,
+.widget_archive a:hover,
+.widget_pages a:hover,
+.widget_meta a:hover,
+.widget_nav_menu a:hover,
+.widget_tag_cloud a:hover,
+.wp-block-archives-list li,
+.wp-block-categories-list li,
+.wp-block-archives-list a:hover,
+.wp-block-categories-list a:hover{
+	color: $link_color;
+}
+
+.widget_recent_comments .comment-author-link a:hover {
+	color: $link_hover_color;
+}
+
+.widget_calendar caption,
+.widget_calendar thead,
+.widget_calendar tbody a:hover {
+	color: $invert_text_color;
+	border-color: $primary_color;
+	background-color: $primary_color;
+}
+
+.widget_calendar #today {
+	color: $primary_color;
+}
+
+.widget_calendar tfoot a {
+	color: @alpha( $invert_text_color, 50 );
+}
+
+.widget_calendar tfoot a:hover {
+	color: $invert_text_color;
+}

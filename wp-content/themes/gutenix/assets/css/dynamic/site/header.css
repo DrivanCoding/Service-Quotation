@@ -1,0 +1,160 @@
+/* #Top-panel */
+.top-panel {
+	background-color: $top_panel_bg;
+	color: $top_panel_text_color;
+	font-size: $top_panel_font_size{px};
+}
+.top-panel .gutenix-container,
+.top-panel .gutenix-container-fluid {
+	padding-top: $top_panel_vertical_padding{px};
+	padding-bottom: $top_panel_vertical_padding{px};
+}
+
+.top-panel a {
+	color: $top_panel_link_color;
+}
+
+.top-panel a:hover {
+	color: $top_panel_link_hover_color;
+}
+
+#top_panel-navigation.top-panel-menu li a {
+	color: $top_panel_link_color;
+}
+#top_panel-navigation.top-panel-menu li a:hover,
+#top_panel-navigation.top-panel-menu li.current-menu-item a {
+	color: $top_panel_link_hover_color;
+}
+
+/* #Header-bar */
+.header-bar .gutenix-container,
+.header-bar .gutenix-container-fluid {
+	padding-top: $header_vertical_padding{px};
+	padding-bottom: $header_vertical_padding{px};
+}
+
+.header-bar,
+.header-search-popup {
+	background-color: $header_bg;
+}
+
+.header-bar {
+	@background_img( $header_bg_img, $header_bg_size, $header_bg_position, $header_bg_repeat, $header_bg_attachment )
+}
+
+
+.header-search-toggle,
+.header-search-close,
+.header-search-form__label,
+.header-search-form__field-icon,
+.header-cart__link,
+.social-list--header a,
+.gutenix-header-login-toggle {
+	color: $header_link_color;
+}
+
+.menu-toggle:hover,
+.menu-toggle-close:hover,
+.header-search-toggle:hover,
+.header-search-close:hover,
+.header-cart__link:hover,
+.social-list--header a:hover,
+.gutenix-header-login-toggle:hover {
+	color: $header_link_hover_color;
+}
+
+/* #Logo */
+.site-logo--text {
+	text-transform: $logo_text_transform;
+	font-style: $logo_font_style;
+	font-weight: $logo_font_weight;
+	font-size: $logo_font_size{px};
+	line-height: $logo_line_height;
+	font-family: @font_family( $logo_font_family );
+	letter-spacing: $logo_letter_spacing{px};
+}
+
+.site-logo__link,
+.site-logo__link:hover {
+	color: $site_title_color;
+}
+
+.site-description {
+	text-transform: $tagline_text_transform;
+	font-style: $tagline_font_style;
+	font-weight: $tagline_font_weight;
+	font-size: $tagline_font_size{px};
+	line-height: $tagline_line_height;
+	font-family: @font_family( $tagline_font_family );
+	letter-spacing: $tagline_letter_spacing{px};
+	color: $tagline_color;
+}
+
+/* #Header Buttons */
+.header-btn {
+	font-style: $header_button_font_style;
+	font-weight: $header_button_font_weight;
+	text-transform: $header_button_text_transform;
+	line-height: $header_button_line_height;
+	font-family: @font_family( $header_button_font_family );
+	letter-spacing: $header_button_letter_spacing{px};
+}
+
+.header-btn.header-btn-1 {
+	border: $header_btn_border_width_1{px} solid $header_btn_border_color_1;
+	border-radius: $header_btn_border_radius_1{px};
+	@css_property( background-color, $header_btn_bg_1 );
+	@css_property( color, $header_btn_text_color_1 );
+}
+
+.header-btn.header-btn-1:hover {
+	@css_property( background-color, $header_btn_bg_hover_1 );
+	@css_property( border-color, $header_btn_border_color_hover_1 );
+	@css_property( color, $header_btn_text_color_hover_1 );
+}
+
+.header-btn.header-btn-2 {
+	border: $header_btn_border_width_2{px} solid $header_btn_border_color_2;
+	border-radius: $header_btn_border_radius_2{px};
+	@css_property( background-color, $header_btn_bg_2 );
+	@css_property( color, $header_btn_text_color_2 );
+}
+
+.header-btn.header-btn-2:hover {
+	@css_property( background-color, $header_btn_bg_hover_2 );
+	@css_property( border-color, $header_btn_border_color_hover_2 );
+	@css_property( color, $header_btn_text_color_hover_2 );
+}
+
+/* #Header Search */
+.header-search-form__field {
+	@css_property( color, $header_search_input_color );
+}
+.header-search-toggle path,
+.header-search-close path {
+	fill: $header_link_color;
+}
+.header-search-toggle:hover path,
+.header-search-close:hover path {
+	fill: $header_link_hover_color;
+}
+
+/* Modile Menu */
+.menu-toggle-inner,
+.menu-toggle-inner:before,
+.menu-toggle-inner:after {
+	@css_property( background-color, $vertical_menu_btn_color );
+}
+
+.header-bar__sidebar {
+	@css_property( background-color, $vertical_menu_bg_color );
+}
+
+.menu-toggle-close path {
+	fill: $vertical_menu_close_color;
+}
+@media (max-width: 1024px) {
+	.social-list--header a {
+		color: $vertical_menu_link_color;
+	}
+}

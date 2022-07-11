@@ -1,0 +1,46 @@
+/* #Buttons */
+.btn,
+button,
+input[type='button'],
+input[type='reset'],
+input[type='submit'] {
+	font-style: $button_font_style;
+	font-weight: $button_font_weight;
+	text-transform: $button_text_transform;
+	line-height: $button_line_height;
+	font-family: @font_family( $button_font_family );
+	letter-spacing: $button_letter_spacing{px};
+	border-radius: $button_radius{px};
+}
+
+.btn-primary,
+button,
+input[type='button'],
+input[type='reset'],
+input[type='submit'] {
+	color: $button_text_color_hover;
+	background-color: $button_bg_hover;
+}
+
+.btn-primary:hover,
+button:hover,
+input[type='button']:hover,
+input[type='reset']:hover,
+input[type='submit']:hover {
+	color: $button_text_color;
+	background-color: $button_bg;
+}
+
+.btn-primary:focus,
+button:focus,
+input[type='button']:focus,
+input[type='reset']:focus,
+input[type='submit']:focus {
+	color: $button_text_color;
+	background-color: $button_bg;
+}
+
+.is-style-outline .wp-block-button__link {
+	border-width: $button_border_width{px};
+	border-color: $button_border_color;
+}

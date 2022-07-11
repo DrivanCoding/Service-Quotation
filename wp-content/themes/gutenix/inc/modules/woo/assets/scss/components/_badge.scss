@@ -1,0 +1,48 @@
+/**
+ * Product badges styles
+ */
+
+.onsale {
+
+	&:empty {
+  		display: none !important;
+  	}
+
+	span {
+		display: inline-block;
+		vertical-align: top;
+		margin: 0 5px 0 0;
+		font-weight: 700;
+		font-size: 14px;
+		line-height: 27px;
+		color: #fff;
+		padding: 0 7px;
+		border-radius: 2px;
+	}
+
+	.circle-sale & {
+
+		span {
+			overflow: hidden;
+			padding: 0;
+			width: 50px;
+			height: 50px;
+			line-height: 50px;
+			text-align: center;
+			border-radius: 50%;
+		}
+	}
+
+	
+	// loop products badge style
+	.products &{
+		position: absolute;
+		top: 10px;
+		left: 10px;
+	}
+	
+	// single product badge style
+	.single-product .summary & {
+		margin-bottom: 8px;
+	}
+}

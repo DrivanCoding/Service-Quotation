@@ -1,0 +1,161 @@
+/*
+Theme Name: Quality orange
+Theme URI: https://webriti.com/quality-orange-child-version-details-page/
+Author: webriti
+Author URI: https://www.webriti.com
+Description: A Business theme which is ideal for creating a corporate or business website. Quality Orange is a colored-variation child theme of Quality. Quality Orange comes with various locales.
+Template: quality
+Tags: full-width-template, translation-ready, theme-options, custom-menu, threaded-comments, two-columns, sticky-post, blog, footer-widgets, featured-images, right-sidebar, left-sidebar
+Version: 1.2.9
+Requires at least: 4.7
+Tested up to: 6.0
+Requires PHP: 5.4
+License: GPLv2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Text Domain: quality-orange
+*/
+/*===================================================================================*/
+/*  Navbar-5 and index5
+/*===================================================================================*/
+
+.index5.navbar-header {background-color: #333333;}
+.index5 .header-module {
+    float: right;
+    margin: 20px 10px 22px 20px;
+}
+.navbar5.navbar-custom {
+    min-height: 60px;
+    padding:0;
+}
+.navbar5.navbar-custom .navbar-nav li > a {
+    padding: 20px 15px 20px 15px;
+}
+.navbar5 ul li > a:before  {
+    content: '';
+    display: block;
+    top: 30px;
+    height: 2px;
+    width: 0px;
+    background: transparent;
+    transition: width .5s ease, background-color .5s ease;
+    position: relative;
+}
+.navbar5 ul li > a:hover:before {
+    width: 100%;
+    background: #ff8e30;;
+    left: 0;
+}
+.navbar5 ul li > .dropdown-menu li > a:hover:before {background: #bbb;}
+
+.navbar5 .navbar-toggle {
+    float: none;
+    margin: 10px auto 10px;
+}
+.index5 .logo-link-url {
+    display: inline-block;
+    background-color: unset;
+    padding: 5px;
+}
+.index5 .quality_title_head, .index5.navbar-header p {
+    color: #FFFFFF;
+}
+
+
+@media (max-width: 600px) {
+	.index5 .header-module {
+		float: unset;
+        display: inherit;
+    	margin: 10px auto;
+	}
+	.index5.navbar-header {text-align: center;}
+	.index5 .navbar-brand {float: unset;padding: 0;}
+	.index5 .navbar-brand  img {margin: 20px auto;}
+	.index5 .cart-header {
+		display: inline-block;
+    	float: initial;
+	}
+	.index5 .navbar-brand .site-title {margin: 10px;}
+	.index5 .logo-link-url {
+	    padding: 10px 5px;
+	}
+}
+
+@media (max-width: 1100px) and (min-width: 600px) {
+	.index5 .header-module {
+    	margin: 10px 10px 10px 20px;
+	}
+}
+.site-description {
+    display: inline-block;
+}
+
+.navbar-header.index5{
+	padding: 30px 0px 25px;
+        float: none;
+}
+.site-title h2 a {
+    font-size: 1.85rem;
+    margin: auto;
+}
+@media (max-width: 1100px) {
+.index5 .site-title.site-branding-text {
+text-align: center;
+    float: none;
+}}
+.news #blog-default:nth-child(2n+1){
+      clear:left;
+}
+.wp-block-image img{
+	width: 100%;
+}
+.post iframe{
+    width: auto;
+}
+
+
+@media (min-width: 601px) and (max-width: 1100px) {
+    .index5 .navbar-brand {
+        float: none;
+    }
+    .index5 .navbar-brand img {
+        margin: 20px auto;
+    }
+}
+.service.service-4 .post {
+    text-align: unset;
+}
+.screen-reader-text {
+    clip: rect(1px, 1px, 1px, 1px);
+    position: absolute !important;
+    height: 1px;
+    width: 1px;
+    overflow: hidden;
+    word-wrap: normal !important;
+}
+.screen-reader-text:focus {
+    background-color: #f1f1f1;
+    border-radius: 3px;
+    box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.6);
+    clip: auto !important;
+    color: #21759b;
+    display: block;
+    font-size: 14px;
+    font-size: 0.875rem;
+    font-weight: bold;
+    height: auto;
+    left: 5px;
+    line-height: normal;
+    padding: 15px 23px 14px;
+    text-decoration: none;
+    top: 5px;
+    width: auto;
+    z-index: 100000; /* Above WP toolbar. */
+}
+.no-js .some-element .screen-reader-text {
+    position: static;
+    -webkit-clip-path: none;
+    clip-path: none;
+    width: auto;
+    height: auto;
+    margin: 0;
+}

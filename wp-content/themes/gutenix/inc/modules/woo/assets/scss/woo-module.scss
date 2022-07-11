@@ -1,0 +1,63 @@
+/*
+Theme Name: gutenix
+
+WooCommerce styles override
+*/
+
+/*         Variables        */
+@import "mixins/variables";
+@import "../../../../../sass/variables-site/variables-site";   //main theme variables
+@import "../../../../../sass/grid/variables";   //main theme variables
+@import "../../../../../sass/grid/breakpoints";   //main theme breakpoints
+@import "../../../../../sass/mixins/mixins-master";  //main theme mixins
+@import "mixins/mixins";
+
+/*        Components        */
+@import "components/badge";
+@import "components/button";
+@import "components/description";
+@import "components/archive-panel";
+@import "components/messages";
+@import "components/navigation";
+@import "components/price";
+@import "components/rating";
+@import "components/select";
+@import "components/tables";
+@import "components/meta";
+@import "components/title";
+@import "components/checkbox";
+@import "components/store-notice";
+
+/*        Layouts        */
+@import "layouts/grid";
+@import "layouts/list";
+
+/*        Pages        */
+@import "pages/cart";
+@import "pages/checkout";
+@import "pages/compare";
+@import "pages/my-account";
+@import "pages/order";
+@import "pages/wishlist";
+
+/*        Product        */
+@import "product/product";
+@import "product/product-list";
+@import "product/product-grid";
+
+/*        Categories        */
+@import "category/category";
+
+/*       Single Product        */
+@import "single-product/add-to-cart";
+@import "single-product/reviews";
+@import "single-product/tabs";
+@import "single-product/thumbnails";
+@import "single-product/compare-wishlist";
+
+/*       Plugins        */
+@import "plugins/elementor";
+@import "plugins/jet-elements";
+
+/*       Widgets        */
+@import "widgets/widgets";
